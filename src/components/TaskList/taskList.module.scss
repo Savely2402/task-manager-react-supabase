@@ -1,0 +1,11 @@
+@use '../../styles/variables' as vars;
+
+.taskList {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: vars.$bgColorSecondary;
+    border-radius: 1rem;
+    border: 2px solid vars.$borderColor1;
+}

@@ -6,9 +6,7 @@ import {
     type IconType,
 } from '../../utils/Icons'
 import { Button } from '../Button'
-import styles from './tasksFilters.module.scss'
-
-import './tasksFilters.module.scss'
+import styles from './taskFilters.module.scss'
 
 type FilterPaths = 'all' | 'important' | 'completed' | 'incompleted'
 
@@ -44,7 +42,7 @@ const filters: TasksFilter[] = [
     },
 ]
 
-export const TasksFilters = () => {
+export const TaskFilters = () => {
     return (
         <div>
             {filters.map(({ label, pathname, onClick }) => (
