@@ -1,0 +1,24 @@
+@use './variables' as vars;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: vars.$bgColorPrimary;
+    color: #fff;
+    font-size: 17px;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+}

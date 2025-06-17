@@ -1,0 +1,15 @@
+@use '../../styles/variables' as vars;
+
+.button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: vars.$inactiveBtnTextColor;
+    font-weight: 500;
+    transition: color 0.3s linear;
+
+    &:hover {
+        color: vars.$activeBtnTextColor;
+    }
+}

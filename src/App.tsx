@@ -1,5 +1,12 @@
+import { Layout } from './components/Layout'
+import './styles/globals.scss'
+
 function App() {
-    return <div>Hello</div>
+    return (
+        <>
+            <Layout />
+        </>
+    )
 }
 
 export default App

@@ -1,0 +1,13 @@
+@use '../../styles/variables' as vars;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15rem;
+    height: 100%;
+    padding: 1rem 0;
+    background-color: vars.$bgColorSecondary;
+    border-radius: 1rem;
+    border: 2px solid vars.$borderColor1;
+}

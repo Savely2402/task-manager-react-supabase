@@ -1,0 +1,33 @@
+@use '../../styles/variables' as vars;
+
+.filterButton {
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.1rem;
+    letter-spacing: 1px;
+    color: vars.$inactiveBtnTextColor;
+    transition: background-color 0.3s linear;
+
+    &.active {
+        position: relative;
+        background-color: vars.$activeBtnBgColor;
+        color: vars.$activeBtnTextColor;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: vars.$borderColor2;
+        }
+    }
+
+    &:hover:not(.active) {
+        background-color: vars.$activeBtnBgColorHover;
+    }
+}

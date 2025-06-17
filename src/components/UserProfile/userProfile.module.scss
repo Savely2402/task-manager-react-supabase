@@ -1,0 +1,30 @@
+@use '../../styles/variables' as vars;
+
+.profile {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: vars.$bgColorPrimary;
+    padding: 1rem 0.8rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: border 0.1s linear;
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+
+    &:hover {
+        border: 2px solid vars.$borderColor1;
+
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
